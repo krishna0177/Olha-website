@@ -39,8 +39,9 @@ let t2= gsap.timeline({
           trigger:"page-1",
           scroller:"body",
           markers:true,
-          start:"top -50%",
-          scrub:3
+          start:"top -525%",
+          end:"top -500%",
+          scrub:4
      }
 })
 
@@ -73,6 +74,12 @@ tl.to(".page2-in h1",{
           $('.page2-in h1').textillate({ in: { fadeInUp: 'fadeInUp' } });
      }
 },"anim1")
+
+
+t2.to(".gola3",{
+     scale:10,
+     duration:5
+})
 
 
 // tl.to(".page2-elem h4, .page2-elem p",{
